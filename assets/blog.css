@@ -1,0 +1,140 @@
+@font-face {
+  font-family: Merriweather;
+  src: url(/assets/fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+  font-family: MerriweatherSans;
+  src: url(/assets/fonts/MerriweatherSans-Regular.ttf);
+}
+
+html, body {
+  font: 16px Merriweather, Georgia, serif;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: MerriweatherSans, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #111;
+}
+
+.blog {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0 0 1rem;
+}
+li {
+  padding-bottom: 0.25rem;
+}
+
+/* Header */
+
+.blog-header, .blog-content, .blog-sidebar, .blog-footer {
+  padding: 1rem;
+}
+
+.blog-header {
+  border-bottom: solid 2px #eee;
+  display: flex;
+  gap: 1rem;
+}
+
+.blog-header::before {
+  content: ' ';
+  background: #eee url(/assets/safari-pinned-tab.svg) no-repeat;
+  background-size: 80px 80px;
+  background-position: 2.5px;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+}
+
+.blog-header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.blog-header a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.blog-content h1, h2, h3, h4, h5 {
+  margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+  padding-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.blog-content pre[class*="language-"] {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+img {
+  margin-bottom: 1rem;
+}
+
+pre, code {
+  white-space: pre-wrap !important;
+}
+
+/* Sidebar */
+.blog-sidebar { 
+  border-top: solid 2px #eee;
+}
+
+.blog-sidebar h2 {
+  font-size: 1.2rem;
+}
+
+/* Footer */
+.blog-footer {
+  border-top: solid 2px #eee;
+}
+
+@media (min-width: 768px) {
+  img {
+    float: right;
+    margin: 0 0 1rem 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog {
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'content sidebar'
+    'footer footer';
+    grid-template-rows: auto 1fr auto;
+    gap: 0;
+  }
+
+  .blog-header {
+    grid-area: header;
+  }
+
+  .blog-content {
+    grid-area: content;
+    width: 900px;
+  }
+
+  .blog-sidebar {
+    grid-area: sidebar;
+    width: 300px;
+    border-top: none;
+  }
+
+  .blog-footer {
+    grid-area: footer;
+  }
+}
