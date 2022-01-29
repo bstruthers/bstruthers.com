@@ -1,0 +1,2 @@
+# [Ben Struthers](/)
+My little slice of the interwebs
