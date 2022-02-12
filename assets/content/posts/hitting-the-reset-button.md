@@ -1,6 +1,6 @@
 # Hitting the reset button
 
-By Ben on 2022-01-28
+By Ben on 01/28/2022
 
 ## Here we are...
 
