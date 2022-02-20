@@ -1,16 +1,16 @@
-# Writing an Angular+Markdown Blogging Framework; Part 2 of ?
+# Writing an Angular+Markdown Blogging Framework. Part 2 of 4
 
-By Ben on 2022-01-22
+By Ben on 02/19/2022
 
 ## Introduction
 
-Every blog needs a couple basic pages and structure. Since the blog entries are going to be done in Markdown, might as well use Markdown for everything. Since the pages are core to the framework, they can't be ignored by git and need to be committed.
+Every blog needs a couple basic pages and structure. Since the blog entries are going to be done in Markdown, the framework might as well use Markdown for everything. Since the pages are core to the framework, they can't be ignored by git and need to be committed.
 
 ## Adding more content
 
-Under the assets folder, I created three additional Markdown files for the most essential pages`home`, `about.md`, and `not-found.md`. The content in home.md will be... the home page, the content in about.md will be a little bio for any visitors, and not-found.md will be the 404 page.
+Under the assets folder, I created three additional Markdown files for the most essential pages `home.md`, `about.md`, and `not-found.md`. The content in home.md is the home page, the content in about.md is a little bio for any visitors, and not-found.md will be the 404 page.
 
-The blog also needs a header, footer, content area, and sidebar. The content area will be populated with the blog entries, home, and about content. The rest of the areas will need Markdown for their content. I created three more files, `header.md`, `sidebar.md`, and `footer.md`.
+A blog also needs a header, footer, content, and sidebar areas. The content area will be populated with the blog entries, home, and about content. The rest of the areas will need Markdown for their content. I created three more files, `header.md`, `sidebar.md`, and `footer.md`.
 
 ## Rendering the structure
 
