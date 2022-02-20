@@ -10,7 +10,7 @@ fi
 cp -r ../nx-weblog/dist/apps/blog dist
 
 # Copy latest assets
-cp -r assets dist/assests
+cp -r assets dist/
 
 # Update the html with the meta tags, etc
 head -2 dist/index.html > 1
